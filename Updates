@@ -1,0 +1,8 @@
+i have added few test cases to the main code and also few error handling issues at places that I think we can have them there. I will add few more error messages tomorrow
+On the functions getBlockPos,readFirstBlock,readCurrentBlock.... i made little changes so we can find the file there itself and print status if not found. 
+
+And regarding the function running 2 times. I still could not find out why its doing so. I think it might be the whole storage_mgr.c is running twice,(may be problem in makefile recipe).
+for that check "TEST_RC(writeBlock (2, &File_ph, Mem_ph_pointer));" with this the function running twice nut RC_STATUS is only once
+with "writeBlock (2, &File_ph, Mem_ph_pointer)"; its running only once and fine. 
+
+Regarding documentation everyting is well-organized and understandable, so we can do it once we resolve that function running twice problem.
